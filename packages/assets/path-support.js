@@ -26,4 +26,6 @@ try {
   // $FlowIgnore[invalid-export]
   // $FlowIgnore[module-type-conflict]
   module.exports = require('./src/path-support');
+  // POINTER: This can't be resolved by Metro in a distributed package (all
+  // `require()`s are processed).
 }
